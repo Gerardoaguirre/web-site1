@@ -5,10 +5,49 @@
 
 }
 
-.article{
 
-}
 
 header{
     background: red;
+    height: 100px ;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+// nav ul li{
+//     float: left;
+// }
+.clearfix{ //cuando flotas los elementos, los elementos de abajo se queden en su sitio
+    clear: both;
+}
+nav{
+    background: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 500px;
+    padding: 40px;
+}
+aside{
+    float: left;
+    //width: 20%;
+    background: yellow;
+    min-height: 500px;
+    padding: 10px;
+    width: calc(20% - 20px); //esto calcula los lados del ancho del aside menos los 10m px de cada lado, para que np se baje el container
+    //por el padding que agregamos
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
 }
