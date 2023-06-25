@@ -7,6 +7,7 @@ import { Contactocomponent } from 'src/app/contacto/Contacto.component';
 import { MenuComponent } from 'src/app/menu/Menu.component';
 import { Contenido1component } from './Contenido1/Contenido1.component';
 import { Cabeceracomponent } from 'src/app/cabecera/Cabecera.component';
+import { Lateralcomponent } from '../barralateral/Lateral.component';
 
 // import { AppRoutingModule } from './app-routing.module';
 
@@ -17,7 +18,8 @@ import { Cabeceracomponent } from 'src/app/cabecera/Cabecera.component';
     Contactocomponent,
     MenuComponent,
     Contenido1component,
-    Cabeceracomponent
+    Cabeceracomponent,
+    Lateralcomponent
   ],
   imports: [
     // BrowserModule,
