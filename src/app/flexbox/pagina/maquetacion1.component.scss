@@ -1,0 +1,71 @@
+.caja{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+   // height: 120px;//si no se defina la altura, se adapta al ancho del flexbox
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+.flex-container{
+    display: flex ;
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    //flex-direction: row;
+    //flex-wrap: wrap; //por default se pone nowrap
+    //pero si ponemos wrap, lo que hace es ir ajustandose y acomodanse hacia abajo y no en una sola linea
+    //o usar flex flow
+    flex-flow: row wrap;
+    // justify-content: space-between; //para espacio entre flexbox,
+    justify-content: flex-start;
+    // align-items: center;//se adaptan al contenido del flexbox
+    align-content: center; //alinear el contenido de un flex //space-beetween//space-around
+}
+.flex-container2{
+    display: flex ;
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.caja2{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+   // height: 120px;//si no se defina la altura, se adapta al ancho del flexbox
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+.c1{
+ background: lightblue;
+ order: 3;  //todo order debe usarse dentro de un flex
+ flex-grow: 3;//farle un ancho de prioridad
+ flex-basis: 50%; //muy parecido a grow
+}
+.c2{
+ background: lightcoral;
+ order: 2;
+ flex-grow: 1;
+}
+.c3{
+ background: lightgreen;
+ order: 1;
+ flex-grow: 1;
+}

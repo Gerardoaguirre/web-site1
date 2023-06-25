@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'Inicio',
     loadChildren: ()=>import('./contenidos/principal/Principal.module').then(m=>m.Contenido1Module)
   },
+  {
+    path: 'Flexbox',
+    loadChildren: ()=>import('./flexbox/Flexbox.module').then(m=>m.FlexboxModule)
+  },
 ];
 
 @NgModule({
