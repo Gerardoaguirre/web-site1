@@ -24,6 +24,9 @@ const routes: Routes = [
   {
     path: 'Grids',
     loadChildren: ()=>import('./Grids/Grids.module').then(m=>m.GridsModule)
+  },{
+    path: 'BEM',
+    loadChildren: ()=>import('./MetodoBEM/BEM.module').then(m=>m.BEMModule)
   },
 ];
 
