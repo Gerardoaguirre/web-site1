@@ -8,3 +8,30 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+html{
+    font-size: 20px;
+}
+
+
+.caja2{
+    font-size: 2rem; /**si el font size se definio con 20px entonces 2rem vienen siendo 40px*/
+    width: 25rem;
+    height: 25rem;
+
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 528px){
+    html{
+        font-size: 8px;
+    }
+}
