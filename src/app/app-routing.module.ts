@@ -27,6 +27,9 @@ const routes: Routes = [
   },{
     path: 'BEM',
     loadChildren: ()=>import('./MetodoBEM/BEM.module').then(m=>m.BEMModule)
+  },{
+    path: 'BoxSizing',
+    loadChildren: ()=>import('./box-sizing/boxSizing.module').then(m=>m.BoxSizingModule)
   },
 ];
 
